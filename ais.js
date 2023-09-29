@@ -61,30 +61,60 @@
 // //expected output 
 // 4,4
 
-let nums = [
-    [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]],
-    [
-        [11, 12, 13],
-        [14, 15, 16],
-        [17, 18, 19]],
-    [
-        [21, 22, 23],
-        [24, 25, 26],
-        [27, 28, 29]]
-];
-let ais = 0
-for (let i = 0; i < nums.length; i++) {
-    // console.log(nums[i]);
-   for (let a = 0; a < nums[i].length; a++){
-        // console.log(nums[i][a])
-        for (let p = 0; p < nums[i][a].length; p++){
-            // console.log(nums[i][a][p])
-            ais += nums[i][a][p]
+// let nums = [
+//     [
+//         [1, 2, 3],
+//         [4, 5, 6],
+//         [7, 8, 9]],
+//     [
+//         [11, 12, 13],
+//         [14, 15, 16],
+//         [17, 18, 19]],
+//     [
+//         [21, 22, 23],
+//         [24, 25, 26],
+//         [27, 28, 29]]
+// ];
+// let ais = 0
+// for (let i = 0; i < nums.length; i++) {
+//     // console.log(nums[i]);
+//    for (let a = 0; a < nums[i].length; a++){
+//         // console.log(nums[i][a])
+//         for (let p = 0; p < nums[i][a].length; p++){
+//             // console.log(nums[i][a][p])
+//             ais += nums[i][a][p]
          
-        }
+//         }
+//     }
+// }
+// console.log(ais)
+
+function multiplyAll(arr) {
+    let product = 1;
+    // Only change code below this line
+  for (let i = 0; i < arr.length; i++){
+    for (let o = 0; i < arr[i].length; o++){
+      product = product * arr[i][o]
     }
+  }
+    // Only change code above this line
+    return product; 
 }
-console.log(ais)
+  
+  multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+  console.log(product)
+
+  function multiplyAll(arr) {
+    let product = 1;
+    // Only change code below this line
+    for (let i = 0; i < arr.length; i++) {
+      for (let o = 0; o < arr[i].length; o++) {
+        product *= arr[i][o];
+      }
+    }
+    // Only change code above this line
+    return product;
+  }
+  
+  // Modify values below to test your code
+  multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);

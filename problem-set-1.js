@@ -36,13 +36,16 @@
 
 //4 jadiin fizz buzz nya gatau
 // function a (num){
-//     if (num %3 == 0){
-//         return "Fizz"
-//     } else if (num %5 == 0){
-//         return "Buzz"
-//     } else if (num %3 == 0 && num %5 == 0){
+//     if (num %3 === 0 && num %5 === 0){
 //         return "FizzBuzz"
-//     } else {
+//     } else if (num %3 === 0){
+//         return "Fizz"
+//     } else if (num %5 === 0){
+//         return "Buzz"
+//     // } else if (num %3 === 0 && num %5 === 0){
+//     //     return "FizzBuzz"
+//     }
+//      else {
 //         return num
 //     }
 // }
@@ -51,15 +54,23 @@
 // console.log(a(c))
 // }
 
-//5 ini jadi catur sih tapi kayanya ga bener
+// //5 ini jadi catur sih tapi kayanya ga bener
 const size = 8
-function a (val) {
-    if (val %2 == 0){
-        return " # # # #" 
-    } else if (val %2 != 0) {
-        return "# # # # "
-    } 
+let a = ""
+for (let i = 0; i <= size / 2; i++){
+    a = " # # # #"
+    console.log(a)
+    a = "# # # # "
+    console.log(a)
 }
-for (let i = 0; i <= size; i++) {
- console.log(a(i))
-}
+
+// function a (val) {
+//     if (val %2 == 0){
+//         return " # # # #" 
+//     } else if (val %2 != 0) {
+//         return "# # # # "
+//     } 
+// }
+// for (let i = 0; i <= size; i++) {
+//  console.log(a(i))
+// }
